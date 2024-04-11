@@ -16,10 +16,10 @@ import project6Big from '../img/projects/06-big.jpg'
 
 
 export const projects = [
-    {title: 'Gaming streaming portal', imgUrl: project1, imgBig: project1Big, link: './project-page.html'},
-    {title: 'Video Service', imgUrl: project2, imgBig: project2Big, link: './project-page.html'},
-    {title: 'Video Portal', imgUrl: project3, imgBig: project3Big, link: './project-page.html'},
-    {title: 'Dating App', imgUrl: project4, imgBig: project4Big, link: './project-page.html'},
-    {title: 'Landing', imgUrl: project5, imgBig: project5Big, link: './project-page.html'},
-    {title: 'Gaming Community', imgUrl: project6, imgBig: project6Big, link: './project-page.html'},
+    {title: 'Gaming streaming portal', imgUrl: project1, imgBig: project1Big, link: '/project'},
+    {title: 'Video Service', imgUrl: project2, imgBig: project2Big, link: '/project'},
+    {title: 'Video Portal', imgUrl: project3, imgBig: project3Big, link: '/project'},
+    {title: 'Dating App', imgUrl: project4, imgBig: project4Big, link: '/project'},
+    {title: 'Landing', imgUrl: project5, imgBig: project5Big, link: '/project'},
+    {title: 'Gaming Community', imgUrl: project6, imgBig: project6Big, link: '/project'},
 ]

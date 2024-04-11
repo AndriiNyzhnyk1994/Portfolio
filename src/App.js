@@ -8,12 +8,14 @@ import Project from './components/project/Project';
 import ProjectPage from './pages/ProjectPage';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ScrollToTop from './utils/scrollToTop';
 
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <NavBar />
         <Routes>
           <Route path='/' element={<Home />} />
