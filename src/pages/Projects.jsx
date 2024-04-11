@@ -10,9 +10,10 @@ function Projects() {
                 <h2 className="title-1">Projects</h2>
                 <ul className="projects">
                     {
-                        projects.map(p => {
+                        projects.map((p, i) => {
                             return (
                                 <Project
+                                    key={i}
                                     imageUrl={p.imgUrl}
                                     link={p.link}
                                     title={p.title}

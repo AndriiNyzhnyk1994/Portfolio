@@ -4,6 +4,8 @@ import Footer from './components/footer/Footer'
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Contacts from './pages/Contacts';
+import Project from './components/project/Project';
+import ProjectPage from './pages/ProjectPage';
 
 
 
@@ -12,8 +14,9 @@ function App() {
     <div className="App">
       <NavBar />
       {/* <Home /> */}
-      <Projects/>
-      <Contacts />
+      {/* <Projects/> */}
+      <ProjectPage />
+      {/* <Contacts /> */}
       <Footer />
     </div>
   );
