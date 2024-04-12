@@ -13,7 +13,7 @@ function ProjectPage() {
     <main className="section">
       <div className="container">
         <div className="project-details">
-          
+
           <h1 className="title-1">{project.title}</h1>
 
           <img src={project.imgBig} alt="" className="project-details__cover" />
@@ -22,7 +22,8 @@ function ProjectPage() {
             <p>Skills: React, Node.js, MongoDB</p>
           </div>
 
-          <ButtonGitHub link={project.githubLink} />
+          {project.githubLink && <ButtonGitHub link={project.githubLink} />}
+
 
         </div>
       </div>
