@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
-import sun from '../../img/icons/sun.svg'
-import moon from '../../img/icons/moon.svg'
+import sun from './icons/sun.svg'
+import moon from './icons/moon.svg'
 
 function ButtonDarkMode() {
     return (
