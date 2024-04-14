@@ -4,11 +4,11 @@ import sun from './icons/sun.svg'
 import moon from './icons/moon.svg'
 
 function ButtonDarkMode() {
-
+    
     const [themeMode, setThemeMode] = useState('light')
     const buttonRef = useRef(null)
 
-
+    
     const toggleDarkMode = () => {
         setThemeMode((currentValue) => {
             return currentValue === 'light' ? 'dark' : 'light'
@@ -24,8 +24,8 @@ function ButtonDarkMode() {
             buttonRef.current.classList.remove('dark-mode-btn--active')
         }
     }, [themeMode])
-
-
+    
+    
     return (
         <button ref={buttonRef} onClick={toggleDarkMode} className="dark-mode-btn">
             <img src={moon} alt="Light mode" className="dark-mode-btn__icon" />
