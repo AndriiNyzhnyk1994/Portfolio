@@ -1,12 +1,13 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 import './style.css'
 import sun from './icons/sun.svg'
 import moon from './icons/moon.svg'
+import { useLocalStorage } from '../../utils/useLocalStorage'
 
-function ButtonDarkMode() {
-    
-    const [themeMode, setThemeMode] = useState('light')
+function ButtonDarkMode() {    
     const buttonRef = useRef(null)
+
+    const [themeMode, setThemeMode] = useLocalStorage('themeMode', 'light');
 
     
     const toggleDarkMode = () => {
