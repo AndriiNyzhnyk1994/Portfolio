@@ -3,11 +3,13 @@ import './style.css'
 import sun from './icons/sun.svg'
 import moon from './icons/moon.svg'
 import { useLocalStorage } from '../../utils/useLocalStorage'
+import { detectDarkMode } from '../../utils/detectDarkMode'
+
 
 function ButtonDarkMode() {    
     const buttonRef = useRef(null)
 
-    const [themeMode, setThemeMode] = useLocalStorage('themeMode', 'light');
+    const [themeMode, setThemeMode] = useLocalStorage('themeMode', detectDarkMode());
 
     
     const toggleDarkMode = () => {
