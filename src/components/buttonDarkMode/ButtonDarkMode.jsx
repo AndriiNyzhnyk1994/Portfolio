@@ -8,7 +8,6 @@ import { detectDarkMode } from '../../utils/detectDarkMode'
 
 function ButtonDarkMode() {    
     const buttonRef = useRef(null)
-
     const [themeMode, setThemeMode] = useLocalStorage('themeMode', detectDarkMode());
 
     
